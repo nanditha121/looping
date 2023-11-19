@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looping Examples</title>
+</head>
+<body>
+
+  <h2>Looping Examples</h2>
+
+  <script>
+    // Looping through an Array
+    const arrayExample = [1, 2, 3, 4, 5];
+
+    console.log("Looping through an Array:");
+    for (let i = 0; i < arrayExample.length; i++) {
+      console.log(arrayExample[i]);
+    }
+
+    // Looping through an Object
+    const objectExample = { name: "John", age: 25, city: "New York" };
+
+    console.log("\nLooping through an Object:");
+    for (let key in objectExample) {
+      console.log(key + ": " + objectExample[key]);
+    }
+
+    // Looping through an Array of Objects
+    const arrayOfObjects = [
+      { name: "Alice", age: 30 },
+      { name: "Bob", age: 28 },
+      { name: "Charlie", age: 35 }
+    ];
+
+    console.log("\nLooping through an Array of Objects:");
+    for (let i = 0; i < arrayOfObjects.length; i++) {
+      const obj = arrayOfObjects[i];
+      for (let key in obj) {
+        console.log(key + ": " + obj[key]);
+      }
+    }
+
+    // Looping through an Array of Objects with Dynamic Key Names
+    const dynamicKeyArray = [
+      { prop1: "value1", prop2: "value2" },
+      { propA: "valueA", propB: "valueB" },
+      { propX: "valueX", propY: "valueY" }
+    ];
+
+    console.log("\nLooping through an Array of Objects with Dynamic Key Names:");
+    for (let i = 0; i < dynamicKeyArray.length; i++) {
+      const obj = dynamicKeyArray[i];
+      for (let key in obj) {
+        console.log(key + ": " + obj[key]);
+      }
+    }
+  </script>
+
+</body>
+</html>
